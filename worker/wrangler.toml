@@ -1,0 +1,15 @@
+name = "apartments-api"
+main = "src/index.js"
+compatibility_date = "2026-06-01"
+
+[vars]
+# Origin of the GitHub Pages site (scheme + host, no path, no trailing slash).
+ALLOWED_ORIGIN = "https://zescht.github.io"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "apartments"
+database_id = "54e9032a-669f-4781-9b45-d7278c290b15"
+
+# Secret (not stored here):  npx wrangler secret put APP_PASSPHRASE
+# Local dev: put APP_PASSPHRASE=... in worker/.dev.vars

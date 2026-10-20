@@ -1,0 +1,15 @@
+{
+  "name": "apartments-api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:init:local": "wrangler d1 execute apartments --local --file=schema.sql",
+    "db:init:remote": "wrangler d1 execute apartments --remote --file=schema.sql",
+    "test": "node --test test/"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}
